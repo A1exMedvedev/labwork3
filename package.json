@@ -1,0 +1,31 @@
+{
+  "name": "convert_russian_string",
+  "displayName": "convert_russian_string",
+  "description": "A VS Code extension to translate Russian layout to English.",
+  "version": "0.0.1",
+  "publisher": "Medvedev Alex",
+  "engines": {
+      "vscode": "^1.94.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+      "commands": [
+          {
+              "command": "extension.translateRussian",
+              "title": "Translate Russian layout to English"
+          }
+      ],
+      "keybindings": [
+          {
+              "command": "extension.translateRussian",
+              "key": "ctrl+alt+t",
+              "when": "editorTextFocus"
+          }
+      ]
+  },
+  "devDependencies": {}
+}
